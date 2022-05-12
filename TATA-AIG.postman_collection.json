@@ -1,0 +1,629 @@
+{
+	"info": {
+		"_postman_id": "2d56e396-e6a3-449c-9692-d84681fb75ef",
+		"name": "TATA-AIG",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Two-Wheeler",
+			"item": [
+				{
+					"name": "Rollover",
+					"item": [
+						{
+							"name": "sample",
+							"item": [
+								{
+									"name": "Full Quotation Service",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": ""
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Proposal Data capture",
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"connection": true,
+											"accept-encoding": true,
+											"accept": true,
+											"user-agent": true,
+											"host": true
+										}
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "SRC",
+													"value": "TP",
+													"type": "text",
+													"disabled": true
+												},
+												{
+													"key": "THANKYOU_URL",
+													"value": "https://uat.bimabuy.in/tata-response/3",
+													"type": "text",
+													"disabled": true
+												},
+												{
+													"key": "PDATA",
+													"value": "{\n\t\"functionality\": \"validateproposal\",\n\t\"quotation_no\": \"PHQ/3122/0000000003\",\n\t\"sol_id\": \"1001\",\n\t\"lead_id\": \"Rajesh\",\n\t\"pol_sdate\": \"20180402\",\n\t\"sp_name\": \"Name\",\n\t\"sp_license\": \"Lino12345566\",\n\t\"sp_place\": \"Mahbubnagar\",\n\t\"productcod\": \"3122\",\n\t\"customer\": {\n\t\t\"salutation\": \"Mr\",\n\t\t\"client_type\": \"individual\",\n\t\t\"organization_name\": \"\",\n\t\t\"first_name\": \"Firast Name\",\n\t\t\"middle_name\": \"\",\n\t\t\"last_name\": \"Last Name\",\n\t\t\"gender\": \"Male\",\n\t\t\"dob\": \"19790301\",\n\t\t\"marital_status\": \"Single\",\n\t\t\"address_1\": \"Address One\",\n\t\t\"address_2\": \"\",\n\t\t\"address_3\": \"\",\n\t\t\"address_4\": \"\",\n\t\t\"pincode\": \"625107\",\n\t\t\"account_no\": \"12345678910111\",\n\t\t\"cust_aadhaar\": \"123456789011\",\n\t\t\"cust_pan\": \"\",\n\t\t\"mobile_no\": \"98826788771\",\n\t\t\"email_id\": \"test@gmail.com\"\n\t},\n\t\"vehicle\": {\n\t\t\"engine_no\": \"engineno123\",\n\t\t\"chassis_no\": \"chassisno123\"\n\t},\n\t\"prevpolicy\": {\n\t\t\"flag\": \"N\",\n\t\t\"code\": \"\",\n\t\t\"name\": \"\",\n\t\t\"address1\": \"\",\n\t\t\"address2\": \"\",\n\t\t\"address3\": \"\",\n\t\t\"polno\": \"\",\n\t\t\"pincode\": \"\",\n\t\t\"doc_name\": \"\"\n\t},\n\t\"financier\": {\n\t\t\"type\": \"\",\n\t\t\"name\": \"\",\n\t\t\"address\": \"\",\n\t\t\"loanacno\": \"\"\n\t},\n\t\"automobile\": {\n\t\t\"flag\": \"N\",\n\t\t\"number\": \"\",\n\t\t\"name\": \"\",\n\t\t\"expiry_date\": \"\"\n\t},\n\t\"nominee\": {\n\t\t\"name\": \"nominee Name\",\n\t\t\"age\": \"20\",\n\t\t\"relation\": \"OTHERS\"\n\t},\n\t\"driver\": {\n\t\t\"flag\": \"N\",\n\t\t\"fname\": \"\",\n\t\t\"lname\": \"\",\n\t\t\"gender\": \"Male\",\n\t\t\"age\": \"\",\n\t\t\"drivingexp\": \"\",\n\t\t\"marital_status\": \"\"\n\t},\n\t\"inspection\": {\n\t\t\"flag\": \"N\",\n\t\t\"number\": \"\",\n\t\t\"date\": \"\",\n\t\t\"agency_name\": \"\",\n\t\t\"imagename_1\": \"\",\n\t\t\"imagename_2\": \"\",\n\t\t\"imagename_3\": \"\"\n\t}\n}",
+													"type": "text",
+													"disabled": true
+												},
+												{
+													"key": "product_code",
+													"value": "3122",
+													"type": "text",
+													"disabled": true
+												},
+												{
+													"key": "T",
+													"value": "2D9D1BC5A837E7A2741C6121317E9EE6CE1D32145CBCF7084FA4493ECDA2C2804969A5473610BC2AB4FC034359C11D55F99F8AEC736D84F0EFD531DFE24FFC74F0923F1288A83121B8045A8AAA4D9F920B4D737E3A1134B824E23B1F0561D97AEA647554A31570720BDB6E4CE3D8813A1138ABF16F2A23A8E6BAB012DD07B768019A5B583351F6D36C1F6F26B5C8D474D2F701E664A96F73806EE3A5235DEFFD76CF4106F7F074A55258D75B1DDEFD38",
+													"type": "text",
+													"disabled": true
+												}
+											]
+										},
+										"url": {
+											"raw": "https://pipuat.tataaiginsurance.in/tagichubms/ws/v1/ws/tran1/quotation",
+											"protocol": "https",
+											"host": [
+												"pipuat",
+												"tataaiginsurance",
+												"in"
+											],
+											"path": [
+												"tagichubms",
+												"ws",
+												"v1",
+												"ws",
+												"tran1",
+												"quotation"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Payment gateway interface",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": ""
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "full quote",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://pipuat.tataaiginsurance.in/tagichubms/ws/v1/ws/tran1/quotation",
+									"protocol": "https",
+									"host": [
+										"pipuat",
+										"tataaiginsurance",
+										"in"
+									],
+									"path": [
+										"tagichubms",
+										"ws",
+										"v1",
+										"ws",
+										"tran1",
+										"quotation"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Quick-Quote",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "SRC",
+											"value": "TP",
+											"type": "text"
+										},
+										{
+											"key": "T",
+											"value": "2D9D1BC5A837E7A2741C6121317E9EE6CE1D32145CBCF7084FA4493ECDA2C2804969A5473610BC2AB4FC034359C11D55F99F8AEC736D84F0EFD531DFE24FFC74F0923F1288A83121B8045A8AAA4D9F920B4D737E3A1134B824E23B1F0561D97AEA647554A31570720BDB6E4CE3D8813A1138ABF16F2A23A8E6BAB012DD07B768019A5B583351F6D36C1F6F26B5C8D474D2F701E664A96F73806EE3A5235DEFFD76CF4106F7F074A55258D75B1DDEFD38",
+											"type": "text"
+										},
+										{
+											"key": "productid",
+											"value": "3122",
+											"type": "text"
+										},
+										{
+											"key": "QDATA",
+											"value": "{\n\t\"functionality\": \"validatequote\",\n\t\"quote_type\": \"full\",\n\t\"vehicle\": {\n\t\t\"quotation_no\": \"\",\n\t\t\"segment_code\": \"8\",\n\t\t\"segment_name\": \"MOTOR CYCLE\",\n\t\t\"cc\": \"599\",\n\t\t\"sc\": \"2\",\n\t\t\"sol_id\": \"1001\",\n\t\t\"lead_id\": \"\",\n\t\t\"mobile_no\": \"\",\n\t\t\"email_id\": \"\",\n\t\t\"emp_email_id\": \"\",\n\t\t\"customer_type\": \"Individual\",\n\t\t\"product_code\": \"3122\",\n\t\t\"product_name\": \"Two Wheeler\",\n\t\t\"subproduct_code\": \"37\",\n\t\t\"subproduct_name\": \"Two Wheeler\",\n\t\t\"subclass_code\": \"\",\n\t\t\"subclass_name\": \"\",\n\t\t\"covertype_code\": \"1\",\n\t\t\"covertype_name\": \"Package\",\n\t\t\"btype_code\": \"1\",\n\t\t\"btype_name\": \"Roll Over\",\n\t\t\"risk_startdate\": \"20220224\",\n\t\t\"risk_enddate\": \"20230223\",\n\t\t\"purchase_date\": \"20190113\",\n\t\t\"veh_age\": \"3\",\n\t\t\"manf_year\": \"2019\",\n\t\t\"make_code\": \"158\",\n\t\t\"make_name\": \"HONDA\",\n\t\t\"model_code\": \"1025249\",\n\t\t\"model_name\": \"CB SHINE\",\n\t\t\"variant_code\": \"1025251\",\n\t\t\"variant_name\": \"ELECTRIC START DRUM BRAKE ALLLOY WHEELS\",\n\t\t\"model_parent_code\": \"1025249\",\n\t\t\"fuel_code\": \"1\",\n\t\t\"fuel_name\": \"Petrol\",\n\t\t\"gvw\": \"\",\n\t\t\"age\": \"0\",\n\t\t\"miscdtype_code\": \"\",\n\t\t\"bodytype_id\": \"28\",\n\t\t\"idv\": \"43000\",\n\t\t\"revised_idv\": \"30000\",\n\t\t\"regno_1\": \"MH\",\n\t\t\"regno_2\": \"01\",\n\t\t\"regno_3\": \"BT\",\n\t\t\"regno_4\": \"7878\",\n\t\t\"rto_loc_code\": \"MH-01\",\n\t\t\"rto_loc_name\": \"Mumbai Central\",\n\t\t\"rtolocationgrpcd\": \"2\",\n\t\t\"rto_zone\": \"B\",\n\t\t\"rating_logic\": \"\",\n\t\t\"campaign_id\": \"\",\n\t\t\"fleet_id\": \"\",\n\t\t\"discount_perc\": \"50\",\n\t\t\"pp_covertype_code\": \"1\",\n\t\t\"pp_covertype_name\": \"Package\",\n\t\t\"pp_enddate\": \"20220217\",\n\t\t\"pp_claim_yn\": \"0\",\n\t\t\"pp_prev_ncb\": \"20\",\n\t\t\"pp_curr_ncb\": \"25\",\n\t\t\"addon_plan_code\": \"P1\",\n\t\t\"addon_choice_code\": \"CHOICE1\",\n\t\t\"cust_name\": \"\",\n\t\t\"ab_cust_id\": \"\",\n\t\t\"ab_emp_id\": \"\",\n\t\t\"usr_name\": \"Rajesh\",\n\t\t\"producer_code\": \"\",\n\t\t\"pup_check\": \"N\",\n\t\t\"pos_panNo\": \"\",\n\t\t\"pos_aadharNo\": \"\",\n\t\t\"is_cust_JandK\": \"NO\",\n\t\t\"cust_pincode\": \"521105\",\n\t\t\"cust_gstin\": \"\",\n\t\t\"tenure\": \"1\",\n\t\t\"uw_discount\": \"\",\n\t\t\"Uw_DisDb\": \"\",\n\t\t\"uw_load\": \"\",\n\t\t\"uw_loading_discount\": \"0\",\n\t\t\"uw_loading_discount_flag\": \"D\",\n\t\t\"engine_no\": \"\",\n\t\t\"chasis_no\": \"\",\n\t\t\"idvupperlimit\": \"27000\",\n\t\t\"idvlowerlimit\": \"34500\",\n\t\t\"agent_state_code\": \"101\",\n\t\t\"cust_state_code\": \"2\",\n\t\t\"otp_mobile_no\": \"\",\n\t\t\"cover_opted\": \"C1,C2,C3,\",\n\t\t\"od_covers\": \"C1\",\n\t\t\"tp_covers\": \"C2,C3\",\n\t\t\"addon_covers\": \"\",\n\t\t\"eleidv3\": \"0\",\n\t\t\"neleidv3\": \"0\",\n\t\t\"sdidv3\": \"0\",\n\t\t\"cngidv3\": \"0\",\n\t\t\"depidv3\": \"0\",\n\t\t\"idvt3\": \"0\",\n\t\t\"eleidv2\": \"0\",\n\t\t\"neleidv2\": \"0\",\n\t\t\"sdidv2\": \"0\",\n\t\t\"cngidv2\": \"0\",\n\t\t\"depidv2\": \"0\",\n\t\t\"idvt2\": \"0\",\n\t\t\"PP_FLAG\": \"N\",\n\t\t\"AA_FLAG\": \"N\",\n\t\t\"INSPECT_FLAG\": \"N\",\n\t\t\"MAINDRIVER_FLAG\": \"N\",\n\t\t\"driver_declaration\":\"ODD01\",\n\t\t\"ac_opted_in_pp\":\"Y\"\n\t},\n\t\"cover\": {\n\t\t\"C1\": {\n\t\t\t\"opted\": \"Y\"\n\t\t},\n\t\t\"C2\": {\n\t\t\t\"opted\": \"Y\"\n\t\t},\n\t\t\"C3\": {\n\t\t\t\"opted\": \"Y\",\n\t\t\t\"tenure\":\"1\"\n\t\t},\n\t\t\"C8\": {\n\t\t\t\"opted\": \"N\"\n\t\t},\n\t\t\"C10\": {\n\t\t\t\"opted\": \"N\",\n\t\t\t\"SI\": \"\"\n\t\t},\n\t\t\"C11\": {\n\t\t\t\"opted\": \"N\"\n\t\t},\n\t\t\"C12\": {\n\t\t\t\"opted\": \"N\"\n\t\t},\n\t\t\"C38\": {\n\t\t\t\"opted\": \"N\"\n\t\t},\n\t\t\"C37\": {\n\t\t\t\"opted\": \"N\"\n\t\t},\n\t\t\"C35\": {\n\t\t\t\"opted\": \"N\",\n\t\t\t\"no_of_claims\": \"2\",\n\t\t\t\"Deductibles\": \"0\"\n\t\t},\n\t\t\"C47\": {\n\t\t\t\"opted\": \"N\"\n\t\t}\n\t}\n}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://pipuat.tataaiginsurance.in/tagichubms/ws/v1/ws/tran1/quotation",
+									"protocol": "https",
+									"host": [
+										"pipuat",
+										"tataaiginsurance",
+										"in"
+									],
+									"path": [
+										"tagichubms",
+										"ws",
+										"v1",
+										"ws",
+										"tran1",
+										"quotation"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2W proposal",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"connection": true,
+									"accept-encoding": true,
+									"accept": true,
+									"user-agent": true,
+									"host": true,
+									"content-length": true
+								}
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "T",
+											"value": "2D9D1BC5A837E7A2741C6121317E9EE6CE1D32145CBCF7084FA4493ECDA2C2804969A5473610BC2AB4FC034359C11D55F99F8AEC736D84F0EFD531DFE24FFC74F0923F1288A83121B8045A8AAA4D9F920B4D737E3A1134B824E23B1F0561D97AEA647554A31570720BDB6E4CE3D8813A1138ABF16F2A23A8E6BAB012DD07B768019A5B583351F6D36C1F6F26B5C8D474D2F701E664A96F73806EE3A5235DEFFD76CF4106F7F074A55258D75B1DDEFD38",
+											"type": "text"
+										},
+										{
+											"key": "product_code",
+											"value": "3122",
+											"type": "text"
+										},
+										{
+											"key": "PDATA",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "SRC",
+											"value": "TP",
+											"type": "text"
+										},
+										{
+											"key": "THANKYOU_URL",
+											"value": "https://uat.bimabuy.in/tata-response",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://pipuat.tataaiginsurance.in/tagichubms/ws/v1/ws/tran2/proposal",
+									"protocol": "https",
+									"host": [
+										"pipuat",
+										"tataaiginsurance",
+										"in"
+									],
+									"path": [
+										"tagichubms",
+										"ws",
+										"v1",
+										"ws",
+										"tran2",
+										"proposal"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "New Vehicle",
+					"item": []
+				},
+				{
+					"name": "Renewal(optional)",
+					"item": [
+						{
+							"name": "https://pipuat.tataaiginsurance.in/tagichubws/cpirequest.jsp",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "proposal_no",
+											"value": "P/H/3122/0000053755",
+											"type": "text"
+										},
+										{
+											"key": "SRC",
+											"value": "TP",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://pipuat.tataaiginsurance.in/tagichubws/cpirequest.jsp",
+									"protocol": "https",
+									"host": [
+										"pipuat",
+										"tataaiginsurance",
+										"in"
+									],
+									"path": [
+										"tagichubws",
+										"cpirequest.jsp"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Four-Wheeler",
+			"item": [
+				{
+					"name": "Rollover",
+					"item": [
+						{
+							"name": "Quick Quotation Service",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "https://pipuat.tataaiginsurance.in/tagichubms/ws/v1/ws/tran1/quotation",
+									"protocol": "https",
+									"host": [
+										"pipuat",
+										"tataaiginsurance",
+										"in"
+									],
+									"path": [
+										"tagichubms",
+										"ws",
+										"v1",
+										"ws",
+										"tran1",
+										"quotation"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "New Vehicle",
+					"item": []
+				},
+				{
+					"name": "Renewal(optional)",
+					"item": []
+				}
+			]
+		},
+		{
+			"name": "NEW 4W",
+			"item": [
+				{
+					"name": "Authorization-Token",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"connection": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Cookie",
+								"value": "XSRF-TOKEN=bf34bd66-1f08-42c0-8b58-c5adf99517f3",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "https://api.iorta.in/write",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "4dvjgdbs2bl516rl03jh5oli5j",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "r7pigrbhnqpl69bn5rt7gko7333ej06d628ttgi95t3m9h8okqs",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://uatapigw-tataaig.auth.ap-south-1.amazoncognito.com/oauth2/token",
+							"protocol": "https",
+							"host": [
+								"uatapigw-tataaig",
+								"auth",
+								"ap-south-1",
+								"amazoncognito",
+								"com"
+							],
+							"path": [
+								"oauth2",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "payment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiJPN0RIMkhcLzIwR2R3dERXUXRheSszSU5VREdSMVgyd05BNjhlM2tQTEl5bz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI0ZHZqZ2RiczJibDUxNnJsMDNqaDVvbGk1aiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaHR0cHM6XC9cL2FwaS5pb3J0YS5pblwvd3JpdGUiLCJhdXRoX3RpbWUiOjE2NDg2Mzg5MTUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aC0xLmFtYXpvbmF3cy5jb21cL2FwLXNvdXRoLTFfWEhKZWZ1amhxIiwiZXhwIjoxNjQ4NjQwNzE1LCJpYXQiOjE2NDg2Mzg5MTUsInZlcnNpb24iOjIsImp0aSI6IjY1NThlMDE4LTMwNjktNGQ0My04ZjgyLWQ4N2VmOTJhYWE0OCIsImNsaWVudF9pZCI6IjRkdmpnZGJzMmJsNTE2cmwwM2poNW9saTVqIn0.ZEjAKgvsZFZq1DpXBjSOm9sfpMUhdJQJlnVL4Zb7MG4RPZ3b672dsZ5Rk54fhvq3-O_jhE1UacCaQhr-CclyMgvhfB0UyIiN3WhCm2McM8ndMnl9TxDdaN2qe7A7o8RhYgwFaM2W8dhrtwYYXeoOlMqaC-c_qC5h9AX7S5IzJTlFSJlDQaHu9J1PrsC_SzQ0eeRhjL1ccqeZfyPJXnVtomvOcgS_ZuqB5BSDhmN8-dNV7zPRNBG1SebT7RZXu-_rgcCwfMab6m78EVc55MuxagDIGfpPfy-BhKOMLriyPJj0JBK65ktM0YkVeOzb6a3SqoEX__2C0hkw4JzFC8r72Q"
+							},
+							{
+								"key": "x-api-key",
+								"value": "5QerRezeZs3PrVdLQu79c1v9Nsh5S7BOan26zc7P"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n{\n  \"payment_mode\": \"onlinePayment\",\n  \"online_payment_mode\": \"UPI\",\n  \"payer_type\": \"Financier\",\n  \"payer_id\": \"\",\n  \"payer_pan_no\": \"AABCS6519A\",\n  \"payer_name\": \"PRAVEEN CAPITAL PVT LTD\",\n  \"payer_relationship\": \"\",\n  \"email\": \"nik12@gmail.com\",\n  \"office_location_code\": 90101,\n  \"deposit_in\": \"Bank\",\n  \"pan_no\": \"\",\n  \"mobile_no\": \"9999999999\",\n  \"payment_id\": [\n    \"PY300000024966\"\n  ],\n  \"returnurl\":\"https://www.tataaig.com/\"\n}"
+						},
+						"url": {
+							"raw": "https://uatapigw.tataaig.com/payment/online?product=motor",
+							"protocol": "https",
+							"host": [
+								"uatapigw",
+								"tataaig",
+								"com"
+							],
+							"path": [
+								"payment",
+								"online"
+							],
+							"query": [
+								{
+									"key": "product",
+									"value": "motor"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "quickquote",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"user-agent": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiJPN0RIMkhcLzIwR2R3dERXUXRheSszSU5VREdSMVgyd05BNjhlM2tQTEl5bz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI0ZHZqZ2RiczJibDUxNnJsMDNqaDVvbGk1aiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaHR0cHM6XC9cL2FwaS5pb3J0YS5pblwvd3JpdGUiLCJhdXRoX3RpbWUiOjE2NDc4NDI5OTksImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aC0xLmFtYXpvbmF3cy5jb21cL2FwLXNvdXRoLTFfWEhKZWZ1amhxIiwiZXhwIjoxNjQ3ODQ0Nzk5LCJpYXQiOjE2NDc4NDI5OTksInZlcnNpb24iOjIsImp0aSI6ImMyMTZiZjMyLTE3OGEtNGQ2Mi1iNDI5LTdlZGQxMzRhOGE1MSIsImNsaWVudF9pZCI6IjRkdmpnZGJzMmJsNTE2cmwwM2poNW9saTVqIn0.A56XcpkkvY16z1rn5kWBaxMtu2zURaqJta6eNXjAZ1VS-S5tmuTgZ4CGN3SDn2RDOM2OjYzhkq-ie7rD40XV-X1h2w_R84uaLT7OPEkly_uKBsVywQnWfhOPBeKTeiaSNtdxMWqNopTlf2sEXSvBgv9OkdOosSZt0RRW1ih2dMixhSCddeM3QPVQbdB5ItC7hXzKMzIGo07_BII_85uWolt_50s4EG7mcy7698PZpEEtmOfYVwjP8nBoaypqMwNoMkRGxSiJRctASlszMcbNtt87iT-WbZb3owsWEuRSX72COX7Ro2A_nwCGfs58w4GgCCfUnnByNqpecgh4KdiSIQ",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "5QerRezeZs3PrVdLQu79c1v9Nsh5S7BOan26zc7P",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"source\": \"P\",\r\n    \"q_producer_email\": \"ervfwed.nucsoft@tataaig.com\",\r\n    \"q_producer_code\": \"1234067899\",\r\n    \"pol_plan_id\": \"02\",\r\n    \"place_reg\": \"MUMBAI\",\r\n    \"vehicle_make\": \"HONDA\",\r\n    \"vehicle_model\": \"CITY\",\r\n    \"vehicle_variant\": \"1.3 LXI\",\r\n    \"proposer_type\": \"Individual\",\r\n    \"proposer_pincode\": \"400001\",\r\n    \"proposer_gstin\": \"\",\r\n    \"proposer_salutation\": \"Ms\",\r\n    \"proposer_email\": \"test@gmail.com\",\r\n    \"proposer_mobile\": \"9999999999\",\r\n    \"business_type_no\": \"03\",\r\n    \"dor\": \"2019-09-09\",\r\n    \"prev_pol_end_date\": \"2022-03-15\",\r\n    \"prev_pol_start_date\": \"2021-03-16\",\r\n    \"man_year\": 2019,\r\n    \"pol_start_date\": \"2022-03-22\",\r\n    \"ble_tp_start\": \"\",\r\n    \"ble_tp_end\": \"\",\r\n    \"prev_pol_type\": \"Package\",\r\n    \"claim_last\": \"false\",\r\n    \"pre_pol_ncb\": \"0\",\r\n    \"curr_ncb\": \"20\",\r\n    \"regno_1\": \"MH\",\r\n    \"regno_2\": \"01\",\r\n    \"regno_3\": \"SA\",\r\n    \"regno_4\": \"3221\",\r\n    \"cng_lpg_cover\": \"No\",\r\n    \"cng_lpg_si\": \"\",\r\n    \"electrical_si\": \"\",\r\n    \"non_electrical_si\": \"\",\r\n    \"uw_loading\": \"\",\r\n    \"uw_remarks\": \"\",\r\n    \"uw_discount\": \"\",\r\n    \"tyre_secure\": \"\",\r\n     \"prev_consumable\": \"\",\r\n     \"prev_cnglpg\": \"\",\r\n     \"prev_engine\": \"\",\r\n     \"prev_tyre\": \"\",\r\n     \"prev_dep\": \"Yes\",\r\n    \"tyre_secure_options\": \"DEPRECIATION BASIS\",\r\n    \"engine_secure\": \"\",\r\n    \"engine_secure_options\": \"WITH DEDUCTIBLE\",\r\n    \"dep_reimburse\": \"Yes\",\r\n    \"dep_reimburse_claims\": \"2\",\r\n    \"add_towing\": \"No\",\r\n    \"add_towing_amount\": \"\",\r\n    \"return_invoice\": \"\",\r\n    \"rsa\": \"\",\r\n    \"key_replace\": \"\",\r\n    \"repair_glass\": \"\",\r\n    \"emergency_expense\": \"\",\r\n    \"personal_loss\": \"\",\r\n    \"daily_allowance\": \"No\",\r\n    \"allowance_days_accident\": \"\",\r\n    \"daily_allowance_limit\": \"\",\r\n    \"allowance_days_loss\": \"\",\r\n    \"franchise_days\": \"\",\r\n    \"pa_owner\": \"true\",\r\n    \"pa_owner_tenure\": \"1\",\r\n    \"pa_owner_declaration\": \"None\",\r\n    \"pa_unnamed\": \"No\",\r\n    \"pa_unnamed_no\": \"\",\r\n    \"pa_unnamed_si\": \"\",\r\n    \"pa_named\": \"No\",\r\n    \"pa_paid\": \"No\",\r\n    \"pa_paid_no\": \"\",\r\n    \"pa_paid_si\": \"\",\r\n    \"automobile_association_cover\": \"No\",\r\n    \"vehicle_blind\": \"No\",\r\n    \"antitheft_cover\": \"No\",\r\n    \"voluntary_amount\": \"\",\r\n    \"tppd_discount\": \"No\",\r\n    \"vintage_car\": \"No\",\r\n    \"own_premises\": \"No\",\r\n    \"load_fibre\": \"No\",\r\n    \"load_imported\": \"No\",\r\n    \"load_tuition\": \"No\",\r\n    \"pa_unnamed_csi\": \"\",\r\n    \"vehicle_make_no\": 113,\r\n    \"vehicle_model_no\": 10005,\r\n    \"vehicle_variant_no\": \"100070\",\r\n    \"place_reg_no\": \"99\",\r\n    \"pol_plan_variant\": \"PackagePolicy\",\r\n    \"proposer_fname\": \"geeta\",\r\n    \"proposer_mname\": \"\",\r\n    \"proposer_lname\": \"trimukhe\",\r\n    \"pre_pol_protect_ncb\": null,\r\n    \"claim_last_amount\": null,\r\n    \"claim_last_count\": null,\r\n    \"quote_id\": \"\",\r\n    \"product_id\": \"M300000000001\",\r\n    \"product_code\": \"3184\",\r\n    \"product_name\": \"Private Car\",\r\n    \"ncb_protection\": \"No\",\r\n    \"ncb_no_of_claims\": \"\",\r\n    \"motor_plan_opted\": \"SapphirePlus\",\r\n    \"motor_plan_opted_no\": \"P6\",\r\n    \"vehicle_idv\": \"\",\r\n    \"__finalize\": \"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://uatapigw.tataaig.com/motor/v1/quote",
+							"protocol": "https",
+							"host": [
+								"uatapigw",
+								"tataaig",
+								"com"
+							],
+							"path": [
+								"motor",
+								"v1",
+								"quote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Proposal",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiJPN0RIMkhcLzIwR2R3dERXUXRheSszSU5VREdSMVgyd05BNjhlM2tQTEl5bz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI0ZHZqZ2RiczJibDUxNnJsMDNqaDVvbGk1aiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaHR0cHM6XC9cL2FwaS5pb3J0YS5pblwvd3JpdGUiLCJhdXRoX3RpbWUiOjE2NDc2NzEwODQsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aC0xLmFtYXpvbmF3cy5jb21cL2FwLXNvdXRoLTFfWEhKZWZ1amhxIiwiZXhwIjoxNjQ3NjcyODg0LCJpYXQiOjE2NDc2NzEwODQsInZlcnNpb24iOjIsImp0aSI6IjE1ODk1NTc3LTMzZGQtNDYwOC05ZDAyLWJlZDM4ZmI0Y2JjNyIsImNsaWVudF9pZCI6IjRkdmpnZGJzMmJsNTE2cmwwM2poNW9saTVqIn0.t1ZqalQFoCGdKHA9bpEWm9uK2jwKqgUsETPb7uLjRvJPRyohOUwRi8CM_lBoB7GTaiK04AWGrfoHSjq-uUZht0iPbaOJl68S56TfKw-o5Cm9wbzeZ_imHS_56sr5kD9PS7-F4I-IdDajevOKnVrWJhPOZzV0LnJJijngOsh6fbttBgmoGzQOe9u-Ez_d_JEic5TqAv8Tko4KzprmVcauQR8v_PQR24dOI7IrFT_bvkrc_BaLEfkAMOXMvI9zmSEWSeAfYun4W9jRNyuwvhEC1_vtdvmDnyRiIzdJ1OJc5uAVWiTBs318-zJzYeCGpWULLDRsl-slITI4gjVOxysv4Q",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "5QerRezeZs3PrVdLQu79c1v9Nsh5S7BOan26zc7P",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"proposer_gender\": \"Female\",\r\n    \"proposer_marital\": \"Single\",\r\n    \"proposer_salutation\":\"Ms\",\r\n    \"proposer_fname\":\"Geeta\",\r\n    \"proposer_lname\":\"Trimukhe\",\r\n    \"proposer_email\":\"geeta.nucsoft@tataaig.com\",\r\n    \"proposer_mobile\":\"9768742287\",\r\n    \"proposer_add1\": \"Plot No.1, Sector-1\",\r\n    \"proposer_add2\": \"\",\r\n    \"proposer_add3\": \"Noida\",\r\n    \"proposer_occupation\": \"SERVICE\",\r\n    \"proposer_pan\": \"\",\r\n    \"proposer_annual\": \"\",\r\n    \"proposer_gstin\": \"\",\r\n    \"proposer_dob\": \"2000-01-01\",\r\n    \"vehicle_puc_expiry\": \"\",\r\n    \"vehicle_puc\": \"\",\r\n    \"vehicle_puc_declaration\": \"false\",\r\n    \"pre_insurer_name\": \"EDELWEISS GENERAL INSURANCE COMPANY LIMITED\",\r\n    \"pre_insurer_no\": \"ABCDEF12345\",\r\n    \"pre_insurer_address\": \"\",\r\n    \"financier_type\": \"Hypothecation\",\r\n    \"financier_name\": \"STATE BANK OF HYDERABAD\",\r\n    \"financier_address\": \"\",\r\n    \"nominee_name\": \"Ajai Singh\",\r\n    \"nominee_relation\": \"Son\",\r\n    \"nominee_age\": 18,\r\n    \"appointee_name\": \"\",\r\n    \"appointee_relation\": \"\",\r\n    \"proposal_id\": \"PR300000062352\",\r\n    \"product_id\": \"M300000000001\",\r\n    \"declaration\": \"Yes\",\r\n    \"vehicle_chassis\": \"CHASIS12345678901\",\r\n    \"vehicle_engine\": \"ENGINE123456\",\r\n    \"proposer_fullname\": \"Geeta Trimukhe\",\r\n    \"proposer_pincode\": \"400067\",\r\n    \"quote_no\": \"QT/22/6200013980\",\r\n    \"carriedOutBy\": \"No\",\r\n    \"__finalize\": \"1\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://uatapigw.tataaig.com/motor/v1/proposal",
+							"protocol": "https",
+							"host": [
+								"uatapigw",
+								"tataaig",
+								"com"
+							],
+							"path": [
+								"motor",
+								"v1",
+								"proposal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify_payment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiJPN0RIMkhcLzIwR2R3dERXUXRheSszSU5VREdSMVgyd05BNjhlM2tQTEl5bz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI0ZHZqZ2RiczJibDUxNnJsMDNqaDVvbGk1aiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaHR0cHM6XC9cL2FwaS5pb3J0YS5pblwvd3JpdGUiLCJhdXRoX3RpbWUiOjE2NDg3MDc3MzAsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aC0xLmFtYXpvbmF3cy5jb21cL2FwLXNvdXRoLTFfWEhKZWZ1amhxIiwiZXhwIjoxNjQ4NzA5NTMwLCJpYXQiOjE2NDg3MDc3MzAsInZlcnNpb24iOjIsImp0aSI6IjIwYjI5NDE0LThjNjYtNDFmNS04OWRhLTQ5OWVmYTI0ZWVhYyIsImNsaWVudF9pZCI6IjRkdmpnZGJzMmJsNTE2cmwwM2poNW9saTVqIn0.gpFz-iASUvmWbajQL8Q0IM7iE2rchdhuD3-mdSLjpWz0_tcYnHhHFrWqe1yympms1jSD2mSgLKpBvlFxhaiP3aaF-F5mlHQ3RXWguqSodndK3VwJrnvvz857eVXc1idHNCxdzHS57GxKuZss8cGT0bXpl_I0VTPb9Yk1hhpad5A0ZWUT-0sMhzzr88F33s-Isc5XEzLNd9t43QVHz5oOOrQgYG3WmdWAV3xildxCrcur9HoqXg1-0SK5RQYk5YgQqG4UmxS7Fz3t90xFTAMh5UlSPXg_P6qCwaWgQEBRLa8ol7rzl8C7oR1T05GS6nm07mmCQzw3G4Oe2SFcoN-mWg",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "5QerRezeZs3PrVdLQu79c1v9Nsh5S7BOan26zc7P",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"payment_id\" : \"PY300000027351\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://uatapigw.tataaig.com/payment/verify?product=motor",
+							"protocol": "https",
+							"host": [
+								"uatapigw",
+								"tataaig",
+								"com"
+							],
+							"path": [
+								"payment",
+								"verify"
+							],
+							"query": [
+								{
+									"key": "product",
+									"value": "motor"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PDF download",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiJPN0RIMkhcLzIwR2R3dERXUXRheSszSU5VREdSMVgyd05BNjhlM2tQTEl5bz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI0ZHZqZ2RiczJibDUxNnJsMDNqaDVvbGk1aiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaHR0cHM6XC9cL2FwaS5pb3J0YS5pblwvd3JpdGUiLCJhdXRoX3RpbWUiOjE2NDg3MTExNzMsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aC0xLmFtYXpvbmF3cy5jb21cL2FwLXNvdXRoLTFfWEhKZWZ1amhxIiwiZXhwIjoxNjQ4NzEyOTczLCJpYXQiOjE2NDg3MTExNzMsInZlcnNpb24iOjIsImp0aSI6ImJiODc1ODg1LTYzMDEtNDNkNi05ODJlLTcxMjZjYjhiMzE1OCIsImNsaWVudF9pZCI6IjRkdmpnZGJzMmJsNTE2cmwwM2poNW9saTVqIn0.O76F-qH1DwFiphFLm-IcQFZ8lCeWVWhy1DadXdd9ggbNLmlWpAHMeNwgHmnf_W7WQm-qznAYfKJlmoVAMQJ5DrB62dk06k9ru1yxDAcj3wUkgK0zryiO4KLP9goYCKxTA1Rtsa6U9VuLS2KMoUMUMwnf9lwm6otc9o6V9-n6CF0yzbaF8mW0f1txZrqHoNSA9Bp4xyz2GelqKpcqj2tCXsqjcrW_lo2qOWArOAUbiuGpJbBDp1EPuvAk2ul_tOvnFWcxmmQuupGvygtrEMlOIizW2A8iVul2UXkxrNQWu3xXeJAOJ0t9O9ERFsHZ9SoqPUUEBfE-USjiSwcdQIxQVg",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "5QerRezeZs3PrVdLQu79c1v9Nsh5S7BOan26zc7P",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://uatapigw.tataaig.com/motor/v1/policy-download/P300000401761 ",
+							"protocol": "https",
+							"host": [
+								"uatapigw",
+								"tataaig",
+								"com"
+							],
+							"path": [
+								"motor",
+								"v1",
+								"policy-download",
+								"P300000401761 "
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
